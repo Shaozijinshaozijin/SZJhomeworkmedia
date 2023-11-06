@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AIGC导航站</title>
+    <title>个人网址导航栏</title>
     <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="style.css" /> -->
@@ -18,18 +18,25 @@
     <!-- 头部 -->
     <h1
       class="font-sans font-bold text-2xl text-pink-950 p-8 text-center border-b border-pink-100 border-solid shadow-sm"
-    >
-      AIGC 资源导航
+      style="
+        background-image: url('https://tailwindcss.com/_next/static/media/docs@tinypng.d9e4dcdc.png');
+      "
+      <div class="text-5xl font-extrabold ...">
+        <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          个人网址导航栏
+        </span>
+      </div>
+   
     </h1>
-    <div class="bg-gray-50">
+    <div class="bg-gray-100">
       <div class="container mx-auto p-8">
-        <div class="flex my-8 gap-2 items-center">
+        <div class="flex items-center gap-2 mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
             fill="currentColor"
-            class="text-pink-400"
+            class="text-pink-950"
             viewBox="0 0 16 16"
           >
             <path
@@ -40,67 +47,215 @@
               d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435Zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134Z"
             />
           </svg>
-          <h2 id="home" class="underwave text-lg">国产文本生成工具</h2>
+          <h2 id="home" class="underwave text-lg text-gray-500">
+            工具类
+          </h2>
         </div>
-        <div>
-          <a href="https://xinghuo.xfyun.cn">
-            <div
-              class="card bg-white w-72 p-4 flex items-center gap-4 rounded-lg shadow hover:shadow-md"
-            >
-              <img
-                class="block w-10 h-10"
-                src="https://xinghuo.xfyun.cn/spark-icon.ico"
-                alt=""
-              />
-              <div>
-                <h3 class="font-bold">讯飞星火认知大模型</h3>
-                <p class="text-xs text-gray-500 mt-1">
-                  科大讯飞公司推出的认知大模型，在中文处理方面具有一定优势
-                </p>
+
+        <div class="flex gap-x-16 gap-y-8 flex-wrap mb-8">
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://js.design/ai-muses/gallery">
+              <div
+                class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+              >
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzM6NDkxKSI+CjxwYXRoIGQ9Ik02LjAyMjY5IDguNzE2NDJDNi4wMTkxOSA1Ljc0MTIgOS4yOTU3IDMuOTI4ODcgMTEuODE0MSA1LjUxMzAzTDE2LjQwMSA4LjM5ODMyQzE5LjI4MDkgMTAuMjA5OSAxOS4xNjE3IDE0LjQ0NjcgMTYuMTg0NSAxNi4wOTM1TDExLjYzODggMTguNjA3OEM5LjEyMTcyIDIwLjAwMDEgNi4wMzM4MyAxOC4xODE3IDYuMDMwNDQgMTUuMzA1M0w2LjAyMjY5IDguNzE2NDJaIiBmaWxsPSIjMDA5REZGIi8+CjxwYXRoIG9wYWNpdHk9IjAuMjQiIGQ9Ik04LjI1OTQ0IDguNzE2NDJDOC4yNTU5NCA1Ljc0MTIgMTEuNTMyNSAzLjkyODg3IDE0LjA1MDkgNS41MTMwM0wxNy42NzcyIDcuNzk0MTNDMjAuOTg4OCA5Ljg3NzIyIDIwLjg1MTcgMTQuNzQ5MSAxNy40MjgzIDE2LjY0MjdMMTMuODc1NiAxOC42MDc4QzExLjM1ODUgMjAuMDAwMSA4LjI3MDU5IDE4LjE4MTcgOC4yNjcyIDE1LjMwNTNMOC4yNTk0NCA4LjcxNjQyWiIgZmlsbD0iIzAwOURGRiIvPgo8cGF0aCBkPSJNMy43MzY3NSA4LjcxNjQ0QzMuNzMzMjUgNS43NDEyMiA3LjAwOTc2IDMuOTI4ODkgOS41MjgxNyA1LjUxMzA1TDE1LjEwNTQgOS4wMjEyOEMxNy41NDAyIDEwLjU1MjkgMTcuNDM5NCAxNC4xMzUgMTQuOTIyMyAxNS41MjcyTDkuMzUyODkgMTguNjA3OEM2LjgzNTc4IDIwLjAwMDEgMy43NDc4OSAxOC4xODE4IDMuNzQ0NSAxNS4zMDUzTDMuNzM2NzUgOC43MTY0NFoiIGZpbGw9IiMyNDMwNDIiLz4KPHBhdGggZD0iTTkuOTI1OTggMTIuNDYyOEw5LjY1MDI3IDEyLjQ2ODJMOS41MDc3NCAxMi43MDQzTDguNTk0NzcgMTQuMjE2NEM4LjM5NTg1IDE0LjU0NTkgNy44ODk0NiAxNC40MDQ5IDcuODg5NDYgMTQuMDJMNy44ODk0NiAxMC4wNzY2QzcuODg5NDYgOS43ODQwNiA4LjIwNjEzIDkuNjAxMjMgOC40NTk0NiA5Ljc0NzQ5TDExLjg3NDYgMTEuNzE5MkMxMi4yMDc5IDExLjkxMTYgMTIuMDc2OCAxMi40MjA3IDExLjY5MiAxMi40MjgyTDkuOTI1OTggMTIuNDYyOFoiIHN0cm9rZT0id2hpdGUiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8zOjQ5MSI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">即时设计</h3>
+                  <p class="text-xs text-gray-400">
+                    即时设计是一款在线可协作的UI设计工具,即时设计拥有海量的设计资源与素材。
+                  </p>
+                </div>
               </div>
-            </div></a
-          >
-        </div>
-        <ul class="normal">
-          <li>
-            <a href="https://xinghuo.xfyun.cn">讯飞星火认知大模型</a>
-          </li>
-          <li>
-            <a href="https://yiyan.baidu.com">文心一言</a>
-          </li>
-          <li>
-            <a href="https://tongyi.aliyun.com/">通义千问</a>
-          </li>
-          <li>
-            <a href="https://www.doubao.com/">豆包</a>
-          </li>
-        </ul>
-        <h2 class="underwave">国外文本生成工具</h2>
-        <ul>
-          <li>
-            <a href="https://bing.com/chat">Bing Chat</a>
-          </li>
-          <li>
-            <a href="https://chat.openai.com">ChatGPT</a>
-          </li>
-          <li>
-            <a href="https://claude.ai/">Claude</a>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://pansoso.com/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://img.cscl.com.cn/uploadimg/ico/2021/0722/1626945988526576.png"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">盘搜搜</h3>
+                  <p class="text-xs text-gray-400">盘搜搜是一款功能强大的文件搜索应用,旨在帮助用户快速准确地找到本地或云端存储设备中的文件。
+
+
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="http://bzdt.ch.mnr.gov.cn/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="http://bzdt.ch.mnr.gov.cn/image/sbsm.ico"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">标准地图服务系统</h3>
+                  <p class="text-xs text-gray-400">标准地图依据中国和世界各国国界线画法标准编制而成,可用于新闻宣传用图、书刊报纸插图等。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+         <div class="card grow md:w-64 md:grow-0">
+            <a href="https://cnkgraph.com/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://cnkgraph.com/images/logo.png"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">知识图谱</h3>
+                  <p class="text-xs text-gray-400">本网站致力于将计算机技术引入到古籍领域，以便析取各类古籍中的实体信息，并建立关联，从而形成古籍领域的知识图谱。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+          <div class="card grow md:w-64 md:grow-0">
+            <a href="https://zhenti.burningvocabulary.com/">
+              <div
+                class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+              >
+                <img
+                  src="https://zhenti.burningvocabulary.com/apple-touch-icon.png"
+                  class="block w-12 h-12"
+                />
+                <div>
+                  <h3 class="font-bold mb-2">英语真题在线</h3>
+                  <p class="text-xs text-gray-400">为数百万学生提供专业的历年英语真题。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+          <div class="card grow md:w-64 md:grow-0">
+              <a href="https://bilicover.magecorn.com/">
+                <div
+                  class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-150 ease-in-out"
+                >
+                  <img
+                    src="https://bilicover.magecorn.com/favicon.png"
+                    class="block w-12 h-12"
+                  />
+                  <div>
+                    <h3 class="font-bold mb-2">B站视频封面在线提取</h3>
+                    <p class="text-xs text-gray-400">
+                      bilibili视频封面在线提取器，可以根据B站视频链接，BV号提取视频封面并进行下载。
+
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card grow md:w-64 md:grow-0">
+              <a href="http://www.12348.gov.cn/#/homepage?zxlogin=true&returnUrl=https:%2F%2Fai.12348.gov.cn%2F">
+                <div
+                  class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+                >
+                  <img
+                    src="http://www.12348.gov.cn/resources/images/favicon.png"
+                    class="block w-12 h-12"
+                  />
+                  <div>
+                    <h3 class="font-bold mb-2">中国法律服务网</h3>
+                    <p class="text-xs text-gray-400">中国法律服务网提供法律事务咨询、法律服务指引、法律法规与案例查询等多种服务。
+  
+  
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card grow md:w-64 md:grow-0">
+              <a href="https://www.gsdata.cn/">
+                <div
+                  class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+                >
+                  <img
+                    src="https://storage-public.zhaopin.cn/user/avatar/1610001002012593429/4e4a20a4462309f718b532e8780e0cf3d6cad676.jpg"
+                    class="block w-12 h-12"
+                  />
+                  <div>
+                    <h3 class="font-bold mb-2">清博智能</h3>
+                    <p class="text-xs text-gray-400">清博智能是全域覆盖的新媒体大数据平台,拥有清博指数、清博舆情、智能融媒体平台等多个核心产品。</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+  
+           <div class="card grow md:w-64 md:grow-0">
+              <a href="https://www.adquan.com/">
+                <div
+                  class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+                >
+                  <img
+                    src="http://testwww.adquan.com/favicon.ico"
+                    class="block w-12 h-12"
+                  />
+                  <div>
+                    <h3 class="font-bold mb-2">广告门</h3>
+                    <p class="text-xs text-gray-400">是中国广告传播行业领先在线媒体及产业互动资讯服务平台。为广告传播行业提供专业行业信息,广告人才招聘培训等专业服务。</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+    <div class="card grow md:w-64 md:grow-0">
+              <a href="http://amap.zju.edu.cn/">
+                <div
+                  class="flex items-center gap-4 h-28 bg-white p-4 rounded-lg shadow hover:shadow-lg"
+                >
+                  <img
+                    src="https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/cbdb/files/logo.png?m=1699285424"
+                    class="block w-12 h-12"
+                  />
+                  <div>
+                    <h3 class="font-bold mb-2">学术地图发布平台</h3>
+                    <p class="text-xs text-gray-400">提供地理信息研究成果的发布、可视化分析及多功能查询服务。</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        
+       
           </li>
         </ul>
         <hr />
-        <div>
-          <p>
-            道冲而用之或不盈，渊兮似万物之宗。挫其锐，解其纷，和其光，同其尘。湛兮似或存，吾不知谁之子，象帝之先。
-            道冲而用之或不盈，渊兮似万物之宗。挫其锐，解其纷，和其光，同其尘。湛兮似或存，吾不知谁之子，象帝之先。
-            道冲而用之或不盈，渊兮似万物之宗。挫其锐，解其纷，和其光，同其尘。湛兮似或存，吾不知谁之子，象帝之先。
-          </p>
-        </div>
       </div>
     </div>
+
+
+
+
     <!-- 页脚部分 -->
     <footer class="bg-gray-700 flex h-20 justify-center items-center">
       <p class="text-center text-xs text-gray-50">
-        <a href="https://yangzh.cn">yangzh.cn</a>
+        <a href="https://yangzh.cn">szj.cn</a>
       </p>
     </footer>
   </body>
